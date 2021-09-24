@@ -53,4 +53,4 @@ jobs:
         app-name: 'frontend-kanban-board'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_22154633a5c64302a34f485f6e326d3f }}
-        package: .
+        package: ./frontend
