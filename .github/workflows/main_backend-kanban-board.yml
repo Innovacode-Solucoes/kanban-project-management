@@ -53,4 +53,4 @@ jobs:
         app-name: 'backend-kanban-board'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_3799f01d41874639944d5f261905ccbc }}
-        package: .
+        package: ./backend
