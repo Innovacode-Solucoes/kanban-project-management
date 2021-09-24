@@ -43,7 +43,7 @@ registerLocaleData(en);
     StoreModule.forRoot({}, {}),
     EffectsModule.forRoot([]),
     StoreDevtoolsModule.instrument({
-      name: 'Kanban Project Management',
+      name: 'Smartflow 365',
       maxAge: 25,
       logOnly: environment.production,
     }),

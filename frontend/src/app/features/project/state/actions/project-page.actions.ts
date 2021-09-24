@@ -15,16 +15,16 @@ export const createProject = createAction(
 );
 
 export const updateProject = createAction(
-  '[Project Page] Update Project',
+  '[Project Page] Atualizar Projeto',
   props<{ project: Project }>()
 );
 
 export const deleteProject = createAction(
-  '[Project Page] Delete Project',
+  '[Project Page] Excluir Projeto',
   props<{ projectId: string }>()
 );
 
 export const removePeople = createAction(
-  '[Project Page] Remove People',
+  '[Project Page] Remover Pessoa',
   props<{ userId: string }>()
 );

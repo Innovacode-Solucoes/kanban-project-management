@@ -36,7 +36,7 @@ export class ProjectEffects {
           catchError((error) => {
             this.feedbackService.createNotification(
               FeedbackTypes.error,
-              'Projects could not be loaded',
+              'Os projetos não puderam ser carregados',
               error.message
             );
             return of(ProjectApiActions.loadProjectsFailure({ error }));

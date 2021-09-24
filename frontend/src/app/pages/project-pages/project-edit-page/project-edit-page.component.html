@@ -2,8 +2,8 @@
   *ngIf="currentProject$ | async as selectedProject; else projectNotSelected"
 >
   <project-header
-    [subTitle]="'Project settings'"
-    [title]="'Details'"
+    [subTitle]="'Configurações do Projeto'"
+    [title]="'Detalhes'"
   ></project-header>
   <project-form
     [currentProject]="selectedProject"

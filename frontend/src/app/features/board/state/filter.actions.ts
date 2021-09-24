@@ -2,20 +2,20 @@ import { createAction, props } from '@ngrx/store';
 
 
 export const setSearchTermFilter = createAction(
-  '[Filter] Set SearchTerm',
+  '[Filter] Definir Termo de Pesquisa',
   props<{ searchTerm: string }>()
 );
 
 export const toggleUser = createAction(
-  '[Filter] Toggle User',
+  '[Filter] Alternar Usuário',
   props<{ userId: string }>()
 )
 
-export const toggleOnlyMyIssues = createAction('[Filter] Toogle Only My Issues');
+export const toggleOnlyMyIssues = createAction('[Filter] Apenas Minhas Issues');
 
-export const toggleRecentlyUpdated = createAction('[Filter] Toogle Recently Updated');
+export const toggleRecentlyUpdated = createAction('[Filter] Atualizados Recentemenet');
 
-export const clearAllFilters = createAction('[Filter] Clear All');
+export const clearAllFilters = createAction('[Filter] Limpar Tudo');
 
 
 

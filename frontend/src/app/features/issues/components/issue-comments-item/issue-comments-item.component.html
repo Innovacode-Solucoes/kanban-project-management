@@ -15,7 +15,7 @@
         [modules]="defaultEditorOptions"
         format="object"
         [styles]="{ 'min-height': '100px' }"
-        placeholder="Add a comment"
+        placeholder="Adicionar um comentário"
         (onEditorCreated)="editorCreated($event)"
         [trimOnValidation]="true"
         [required]="true"
@@ -43,8 +43,8 @@
   </nz-comment-content>
   <ng-container *ngIf="canBeEditByCurrentUser && !isEditing">
     <div class="comment-actions">
-      <a (click)="onEditComment(comment.content)">Edit</a>
-      <a (click)="onDeleteComment(comment.id)">Delete</a>
+      <a (click)="onEditComment(comment.content)">Editar</a>
+      <a (click)="onDeleteComment(comment.id)">Deletar</a>
     </div>
   </ng-container>
 </nz-comment>
@@ -60,7 +60,7 @@
       *ngIf="comment.isEdited"
       nz-tooltip
       [nzTooltipTitle]="comment.updatedAt | issueTimeElapsed"
-      >Edited</span
+      >Editado</span
     >
   </div>
 </ng-template>

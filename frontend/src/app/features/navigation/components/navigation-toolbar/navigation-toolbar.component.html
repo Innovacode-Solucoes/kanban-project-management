@@ -4,7 +4,7 @@
       src="https://res.cloudinary.com/comparte/image/upload/v1625633174/logo.svg"
       alt="Project logo"
     />
-    <span>Kanban Project Management</span>
+    <span>Smarflow 365</span>
   </div>
   <div class="nav-options">
     <button
@@ -14,7 +14,7 @@
       nz-dropdown
       [nzDropdownMenu]="projectsMenu"
     >
-      Projects
+      Projetos
       <i nz-icon nzType="down"></i>
     </button>
     <nz-dropdown-menu #projectsMenu="nzDropdownMenu">
@@ -32,16 +32,16 @@
                   <span
                     >{{ project.name }} ({{ project.key | uppercase }})</span
                   >
-                  <span>{{ project.category }} project</span>
+                  <span>Projeto de {{ project.category }} </span>
                 </div>
               </div>
             </li>
           </ul>
         </li>
         <nz-divider></nz-divider>
-        <li nz-menu-item routerLink="projects/all">View all projects</li>
+        <li nz-menu-item routerLink="projects/all">Visualizar todos os Projetos</li>
         <li nz-menu-item routerLink="projects/new">
-          <i nz-icon nzType="plus" nzTheme="outline"></i>Create project
+          <i nz-icon nzType="plus" nzTheme="outline"></i>Criar um Projeto
         </li>
       </ul>
     </nz-dropdown-menu>
@@ -55,7 +55,7 @@
       [nzDropdownMenu]="peopleMenu"
       [nzOverlayStyle]="{ 'min-width': '180px' }"
     >
-      People
+      Pessoas
       <i nz-icon nzType="down"></i>
     </button>
     <nz-dropdown-menu #peopleMenu="nzDropdownMenu">
@@ -64,24 +64,24 @@
           <ul>
             <li nz-menu-item class="toggle-on-hover">
               <i nz-icon nzType="plus" nzTheme="outline"></i>
-              <span>Invite a teammate</span>
-              <span class="not-implemented">Not implemented</span>
+              <span>Convide um colega de equipe</span>
+              <span class="not-implemented">Não implementado</span>
             </li>
           </ul>
         </li>
-        <li nz-menu-group nzTitle="Your Teams">
+        <li nz-menu-group nzTitle="Suas Equipes">
           <ul>
             <li nz-menu-item class="toggle-on-hover">
               <i nz-icon nzType="plus" nzTheme="outline"></i>
-              <span>Start a team</span>
-              <span class="not-implemented">Not implemented</span>
+              <span>Começar uma Equipe</span>
+              <span class="not-implemented">Não implementado</span>
             </li>
           </ul>
         </li>
         <nz-divider></nz-divider>
         <li nz-menu-item class="toggle-on-hover">
-          <span>Search people and teams</span>
-          <span class="not-implemented">Not implemented</span>
+          <span>Pesquisar pessoas e equipes</span>
+          <span class="not-implemented">Não implementado</span>
         </li>
       </ul>
     </nz-dropdown-menu>
@@ -93,7 +93,7 @@
       (click)="openCreateIssueModal()"
       [disabled]="(isCurrentProject$ | async) === false"
     >
-      Create
+      Criar uma Issue
     </button>
   </div>
   <div class="nav-options">
@@ -113,16 +113,16 @@
       <ul nz-menu class="user-menu">
         <li nz-menu-item class="toggle-on-hover">
           <span>Profile</span>
-          <span class="not-implemented">Not implemented</span>
+          <span class="not-implemented">Não implementado</span>
         </li>
         <li nz-menu-item class="toggle-on-hover">
           <span>Account settings</span>
-          <span class="not-implemented">Not implemented</span>
+          <span class="not-implemented">Não implementado</span>
         </li>
         <nz-divider></nz-divider>
         <li nz-menu-item class="toggle-on-hover">
           <span>Log out</span>
-          <span class="not-implemented">Not implemented</span>
+          <span class="not-implemented">Não implementado</span>
         </li>
       </ul>
     </nz-dropdown-menu>

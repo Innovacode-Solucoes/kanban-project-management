@@ -4,7 +4,7 @@
     *ngIf="currentProject$ | async as project"
   >
     <nz-breadcrumb-item
-      ><a routerLink="/projects/all">Projects</a></nz-breadcrumb-item
+      ><a routerLink="/projects/all">Projetos</a></nz-breadcrumb-item
     >
     <nz-breadcrumb-item>
       <a routerLink="/board">{{ project.name }}</a>
@@ -13,7 +13,7 @@
   </nz-breadcrumb>
 
   <nz-page-header-extra>
-    <a
+    <!-- <a
       href="https://github.com/sldiaz04us/kanban-project-management"
       target="_blank"
       rel="author"
@@ -31,6 +31,6 @@
         <i nz-icon nzType="linkedin" nzTheme="fill" class="linkedin-icon"></i
         >LinkedIn
       </button>
-    </a>
+    </a> -->
   </nz-page-header-extra>
 </nz-page-header>

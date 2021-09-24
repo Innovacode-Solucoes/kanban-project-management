@@ -1,4 +1,4 @@
-<div class="issue-comments">Comments</div>
+<div class="issue-comments">Comentários</div>
 <nz-comment>
   <nz-avatar
     nz-comment-avatar
@@ -25,9 +25,9 @@
           [disabled]="commentControl.invalid"
           (click)="addComment()"
         >
-          Save
+          Salvar
         </button>
-        <app-button className="btn-empty" (click)="cancel()">Cancel</app-button>
+        <app-button className="btn-empty" (click)="cancel()">Cancelar</app-button>
       </div>
     </ng-container>
 
@@ -35,7 +35,7 @@
       <nz-form-item>
         <input
           nz-input
-          placeholder="Add a comment"
+          placeholder="Adicionar um comentário"
           nzSize="large"
           (focus)="onFocus()"
         />
@@ -58,7 +58,7 @@
 <nz-alert
   *ngIf="commentsError$ | async as errorMsg"
   nzType="error"
-  nzMessage="Comments could not be loaded"
+  nzMessage="Não foi possível carregar os comentários"
   [nzDescription]="errorMsg"
   nzShowIcon
   nzCloseable

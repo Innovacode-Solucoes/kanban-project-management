@@ -34,7 +34,7 @@ export class ProjectPeoplePageComponent implements OnInit {
     private actionSubject: ActionsSubject,
     private titleService: Title
   ) {
-    this.titleService.setTitle('Settings | People - Kanban Project Management');
+    this.titleService.setTitle('Configurações | Pessoas - Smarflow 365');
   }
 
   ngOnInit(): void {
@@ -67,8 +67,8 @@ export class ProjectPeoplePageComponent implements OnInit {
 
   onDeletePeople(user: User): void {
     this.modalService.confirm({
-      nzTitle: `Remove ${user.name}`,
-      nzContent: `${user.name} won't be able to work on this project anymore`,
+      nzTitle: `Remover ${user.name}`,
+      nzContent: `${user.name} não será mais capaz de trabalhar neste projeto`,
       nzOkText: 'Delete',
       nzOkDanger: true,
       nzOnOk: () => new Promise(resolve => {

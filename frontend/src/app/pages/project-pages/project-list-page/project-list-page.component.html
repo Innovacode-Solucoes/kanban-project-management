@@ -1,14 +1,14 @@
 <div class="projects-header">
-  <h1>Projects</h1>
+  <h1>Projetos</h1>
   <button nz-button nzType="primary" routerLink="/projects/new">
-    Create project
+    Criar um Projeto
   </button>
 </div>
 <div class="projects-content">
   <nz-alert
     *ngIf="projectsError$ | async as errorMsg"
     nzType="error"
-    nzMessage="Projects could not be loaded"
+    nzMessage="Os projetos não puderam ser carregados"
     [nzDescription]="errorMsg"
     nzShowIcon
     nzCloseable
@@ -37,7 +37,7 @@
           [nzSortDirections]="['ascend', 'descend', null]"
           [nzSortFn]="sortByNameFn"
         >
-          Name
+          Nome
         </th>
         <th
           [nzSortOrder]="null"
@@ -46,13 +46,13 @@
         >
           Key
         </th>
-        <th>Category</th>
+        <th>Categoria</th>
         <th
           [nzSortOrder]="null"
           [nzSortDirections]="['ascend', 'descend', null]"
           [nzSortFn]="sortByLeaderFn"
         >
-          Lead
+          Líder
         </th>
         <th></th>
       </tr>

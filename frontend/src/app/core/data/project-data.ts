@@ -4,7 +4,7 @@ export class ProjectData {
   static projects: Project[] = [
     {
       id: '140892',
-      name: 'Sample Kanban Project',
+      name: 'Smarflow 365',
       key: 'SKP',
       url: 'https://github.com/sldiaz04us/kanban-project-management',
       description: '',

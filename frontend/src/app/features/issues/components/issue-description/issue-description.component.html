@@ -1,4 +1,4 @@
-<div class="issue-description">Description</div>
+<div class="issue-description">Descrição</div>
 <ng-container *ngIf="isEditing; else readonlyModeTempl">
   <quill-editor
     [formControl]="descriptionControl"
@@ -9,7 +9,7 @@
   ></quill-editor>
   <div class="actions">
     <button nz-button nzType="primary" [nzLoading]="isLoading" (click)="save()">
-      Save
+      Salvar
     </button>
     <app-button className="btn-empty" (click)="cancel()">Cancel</app-button>
   </div>
