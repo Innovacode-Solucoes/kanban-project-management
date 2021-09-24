@@ -9,5 +9,5 @@ export const environment = {
     appId: 'YOUR_APP_ID',
     measurementId: 'YOUR_MEASUREMENT_ID',
   },
-  serverUrl: 'YOUR_PRODUCTION_SERVER_URL',
+  serverUrl: 'https://backend-kanban-board.azurewebsites.net',
 };

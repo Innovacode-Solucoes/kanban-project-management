@@ -13,7 +13,8 @@ export const environment = {
     appId: 'YOUR_APP_ID',
     measurementId: 'YOUR_MEASUREMENT_ID',
   },
-  serverUrl: 'http://localhost:3000',
+  /*serverUrl: 'http://localhost:3000',*/
+  serverUrl: 'https://backend-kanban-board.azurewebsites.net',
 };
 
 /*
